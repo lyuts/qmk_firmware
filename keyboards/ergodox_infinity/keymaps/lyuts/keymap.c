@@ -1,11 +1,14 @@
 #include QMK_KEYBOARD_H
-//#include "ergodox.h"
+#include "ergodox_infinity.h"
 #include "led.h"
 #include "debug.h"
 #include "action_layer.h"
 #include "action_util.h"
+#include "action_tapping.h"
 #include "version.h"
 #include "mousekey.h"
+#include "eeconfig.h"
+#include "eeprom.h"
 
 //#ifdef SUBPROJECT_infinity
 //#include "visualizer/lcd_backlight.h"
