@@ -15,9 +15,9 @@
 //#endif
 
 #define _BASE 0 // default layer
-#define _L1 1 // symbols
-#define _L2 2 // media keys
-#define _L3 3 // media keys
+#define _L1 1 // Symbols
+#define _L2 2 // Media/Mouse
+#define _L3 3 // Numpad
 
 // Used for SHIFT_ESC
 #define MODS_CTRL_MASK  (MOD_BIT(KC_LSHIFT)|MOD_BIT(KC_RSHIFT))
@@ -80,11 +80,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_EQL,      KC_Y,   KC_U,  KC_I,   KC_O,   KC_P,             KC_BSLS,
                           KC_H,   KC_J,  KC_K,   KC_L,   KC_SCLN,          LT(_L1, KC_QUOT),
              KC_MINS,     KC_N,   KC_M,  KC_COMM,KC_DOT, KC_SLSH,          KC_RSFT,
-                                 LT(_L3, KC_KP_0), KC_RGUI,KC_MENU,KC_APP,           KC_RCTL,
+                                  KC_RALT, KC_RGUI,KC_MENU,KC_APP,           KC_RCTL,
 
              F(TEENSY_KEY),        KC_NO,
              KC_PGUP,
-             KC_PGDN,KC_ENT, KC_SPC
+             KC_PGDN,KC_ENT, LT(_L2, KC_SPC)
     ),
 /* Keymap 1: Symbol Layer
  *
@@ -188,8 +188,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,-------------.
  *                                        |      |      |       |      |      |
  *                                 ,------|------|------|       |------+------+------.
- *                                 |      |      |      |       |      |      |Brwser|
- *                                 |      |      |------|       |------|      |Back  |
+ *                                 |      |      |      |       |      |      |      |
+ *                                 |      |      |------|       |------|      |      |
  *                                 |      |      |      |       |      |      |      |
  *                                 `--------------------'       `--------------------'
  */
