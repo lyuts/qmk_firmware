@@ -14,7 +14,7 @@
 //#include "visualizer/lcd_backlight.h"
 //#endif
 
-#define _BASE 0 // default layer
+#define _BASE 0 // Default layer
 #define _L1 1 // Symbols
 #define _L2 2 // Media/Mouse
 #define _L3 3 // Numpad
