@@ -18,16 +18,16 @@ static void get_visualizer_layer_and_color(visualizer_state_t* state) {
         state->target_lcd_color = LCD_COLOR(140, 100, 60);
         state->layer_text = "Movement";
     } else if (state->status.layer & 0x8) {
-        state->target_lcd_color = LCD_COLOR(0, saturation, 0xFF);
-        state->layer_text = "Media";
+        state->target_lcd_color = LCD_COLOR(240, saturation, 0xFF);
+        state->layer_text = "[4] Numpad";
     } else if (state->status.layer & 0x4) {
-        state->target_lcd_color = LCD_COLOR(168, saturation, 0xFF);
-        state->layer_text = "Symbol";
+        state->target_lcd_color = LCD_COLOR(180, saturation, 0xFF);
+        state->layer_text = "[3] Media + Mouse";
     } else if (state->status.layer & 0x2) {
-        state->target_lcd_color = LCD_COLOR(216, 90, 0xFF);
-        state->layer_text = "Code";
+        state->target_lcd_color = LCD_COLOR(120, 90, 0xFF);
+        state->layer_text = "[2] Symbol";
     } else {
-        state->target_lcd_color = LCD_COLOR(84, saturation, 0xFF);
-        state->layer_text = "Default";
+        state->target_lcd_color = LCD_COLOR(60, saturation, 0xFF);
+        state->layer_text = "[1] Default";
     }
 }
