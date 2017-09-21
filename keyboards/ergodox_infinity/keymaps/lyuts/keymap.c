@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | Ins  |Teensy|       |Teensy|      |
  *                                 ,------|------|------|       |------+------+------.
  *                                 |      |      | Home |       | PgUp |      |      |
- *                                 | Bcksp| Del  |------|       |------|Enter | Tab  |
+ *                                 | Bcksp| Del  |------|       |------|Enter |Spc/L2|
  *                                 |      |      | End  |       | PgDn |      |      |
  *                                 `--------------------'       `--------------------'
  */
