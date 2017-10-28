@@ -3,8 +3,8 @@
 
 #include QMK_KEYBOARD_CONFIG_H
 
-#undef TAPPING_TERM
-#define TAPPING_TERM 150
+//#undef TAPPING_TERM
+//#define TAPPING_TERM 150
 
 #define PERMISSIVE_HOLD
 
