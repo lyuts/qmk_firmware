@@ -9,7 +9,7 @@ processHalf()
 
     echo "Plug in ${WHICH} half"
     read s
-    make ergodox_infinity-lyuts $ADD_OPT
+    make ergodox_infinity:lyuts $ADD_OPT
     sudo make ergodox_infinity-lyuts-dfu-util DFU_ARGS="--device 1c11:b007" VISUALIZER_ENABLE=yes LCD_BACKLIGHT_ENABLE=yes LCD_ENABLE=yes $ADD_OPT
 }
 
